@@ -1,0 +1,51 @@
+{
+    "cors": {
+        "origins": ["*"],
+        "allow_credentials": true,
+        "allow_methods": ["*"],
+        "allow_headers": ["*"]
+    },
+    "server": {
+        "host": "0.0.0.0",
+        "port": 8000
+    },
+    "gradio": {
+        "path": "/ui"
+    },
+    "tts": {
+        "default_voice": "默认",
+        "available_voices": ["默认", "女声", "男声", "童声"]
+    },
+    "emotion": {
+        "default_emotion": "正常",
+        "available_emotions": ["正常", "开心", "悲伤", "愤怒", "惊讶", "恐惧", "温柔", "激动"]
+    },
+    "paths": {
+        "speaker_path": "models",
+        "output_dir": "output"
+    },
+    "nat": {
+        "enable": false,
+        "type": "gradio",
+        "server": "",
+        "port": 7860,
+        "remote_port": 0,
+        "token": "aidub",
+        "custom_domain": "",
+        "username": "",
+        "password": "",
+        "ssh_port": 22
+    },
+    "bucket": {
+        "split_bucket": true,
+        "batch_size": 1,
+        "batch_threshold": 0.75,
+        "text_split_method": "cut0",
+        "temperature": 1,
+        "top_k": 15,
+        "top_p": 1,
+        "repetition_penalty": 1.35,
+        "parallel_infer": true,
+        "fragment_interval": 0.01
+    }
+} 
